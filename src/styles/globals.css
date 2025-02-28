@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-background text-white;
+        font-family: 'Inter', sans-serif;
+    }
+}
+
+@layer components {
+    .container-custom {
+        @apply w-full mx-auto px-4 md:px-6 lg:px-8;
+        max-width: 1280px;
+    }
+
+    .btn-primary {
+        @apply bg-red-600 text-white px-6 py-3 uppercase font-bold tracking-wider hover:bg-red-700 transition duration-300;
+    }
+
+    .section {
+        @apply my-12 px-4 md:px-6 lg:px-8;
+    }
+
+    .card {
+        @apply bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300;
+    }
+}
+
+/* Custom animation classes */
+.animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+}
