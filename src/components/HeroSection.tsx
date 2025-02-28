@@ -41,8 +41,7 @@ const HeroSection = () => {
                         TRAINING
                     </h1>
                     <p className="text-gray-300 my-6 max-w-md">
-                        Train with professional players and elevate your game.
-                        Master weapon recoil, movement techniques, and tactical decision-making.
+                        Level up your Movement Ability and Game Sense in Apex Legends. Get personalized coaching from a dedicated expert to master advanced techniques, strategic positioning, and combat decision-making that separates predators from prey.
                     </p>
                     <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-6">
                         <Link href="/registration">
