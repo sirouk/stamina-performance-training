@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const PrivateClasses = () => {
     return (
-        <section className="bg-black py-20">
+        <section id="private-coaching" className="bg-black py-20">
             <div className="container-custom">
                 <div className="text-center mb-12">
                     <h2 className="text-4xl md:text-5xl font-bold uppercase text-white mb-4 tracking-wider">Private Coaching</h2>

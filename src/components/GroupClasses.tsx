@@ -26,7 +26,7 @@ const ClassCard = ({ title, icon, description, link }: {
 
 const GroupClasses = () => {
     return (
-        <section className="bg-gray-900 py-20">
+        <section id="training-programs" className="bg-gray-dark py-20">
             <div className="container-custom">
                 <div className="text-center mb-12">
                     <h2 className="text-4xl md:text-5xl font-bold uppercase text-white mb-4 tracking-wider">Training Programs</h2>

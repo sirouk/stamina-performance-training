@@ -41,19 +41,21 @@ const HeroSection = () => {
                         TRAINING
                     </h1>
                     <p className="text-gray-300 my-6 max-w-md">
-                        Level up your Movement Ability and Game Sense in Apex Legends. Get personalized coaching from a dedicated expert to master advanced techniques, strategic positioning, and combat decision-making that separates predators from prey.
+                        Level up your Movement Ability and Game Sense in Apex Legends. Get personalized coaching from a dedicated player to master advanced techniques, strategic positioning, and combat decision-making.
                     </p>
                     <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-6">
-                        <Link href="/registration">
-                            <a className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 uppercase font-bold tracking-wider inline-block text-center transition duration-300">
-                                START TRAINING NOW
-                            </a>
-                        </Link>
-                        <Link href="/programs">
-                            <a className="border-2 border-white hover:border-red-600 hover:text-red-600 px-8 py-4 uppercase font-bold tracking-wider inline-block text-center transition duration-300">
-                                VIEW PROGRAMS
-                            </a>
-                        </Link>
+                        <a
+                            href="#private-coaching"
+                            className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 uppercase font-bold tracking-wider inline-block text-center transition duration-300"
+                        >
+                            START TRAINING NOW
+                        </a>
+                        <a
+                            href="#training-programs"
+                            className="border-2 border-white hover:border-red-600 hover:text-red-600 px-8 py-4 uppercase font-bold tracking-wider inline-block text-center transition duration-300"
+                        >
+                            VIEW PROGRAMS
+                        </a>
                     </div>
                 </div>
             </div>

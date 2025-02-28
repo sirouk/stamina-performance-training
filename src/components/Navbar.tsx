@@ -23,45 +23,26 @@ const Navbar = () => {
 
                 {/* Desktop Menu */}
                 <div className="hidden md:flex space-x-10">
-                    <Link href="/start">
-                        <a className="text-white hover:text-red-600 transition duration-300 uppercase font-bold tracking-wider">
-                            Start
-                        </a>
-                    </Link>
-                    <Link href="/performance">
-                        <a className="text-white hover:text-red-600 transition duration-300 uppercase font-bold tracking-wider">
-                            Performance
-                        </a>
-                    </Link>
-                    <Link href="/training">
-                        <a className="text-white hover:text-red-600 transition duration-300 uppercase font-bold tracking-wider">
-                            Training
-                        </a>
-                    </Link>
-                    <Link href="/coaching">
-                        <a className="text-white hover:text-red-600 transition duration-300 uppercase font-bold tracking-wider">
-                            Coaching
-                        </a>
-                    </Link>
-                    <Link href="/shopping">
-                        <a className="text-white hover:text-red-600 transition duration-300 uppercase font-bold tracking-wider">
-                            Shopping
-                        </a>
-                    </Link>
-                    <Link href="/science">
-                        <a className="text-white hover:text-red-600 transition duration-300 uppercase font-bold tracking-wider">
-                            Science
-                        </a>
-                    </Link>
+                    <a href="#"
+                        className="text-white hover:text-red-600 transition duration-300 uppercase font-bold tracking-wider">
+                        Home
+                    </a>
+                    <a href="#training-programs"
+                        className="text-white hover:text-red-600 transition duration-300 uppercase font-bold tracking-wider">
+                        Programs
+                    </a>
+                    <a href="#private-coaching"
+                        className="text-white hover:text-red-600 transition duration-300 uppercase font-bold tracking-wider">
+                        Coaching
+                    </a>
                 </div>
 
                 {/* CTA Button */}
                 <div className="hidden md:block">
-                    <Link href="/registration">
-                        <a className="bg-red-600 text-white px-6 py-2 uppercase font-bold tracking-wider hover:bg-red-700 transition duration-300">
-                            Registration
-                        </a>
-                    </Link>
+                    <a href="#private-coaching"
+                        className="bg-red-600 text-white px-6 py-2 uppercase font-bold tracking-wider hover:bg-red-700 transition duration-300">
+                        Book Now
+                    </a>
                 </div>
 
                 {/* Mobile menu button */}
@@ -100,29 +81,26 @@ const Navbar = () => {
             {isMenuOpen && (
                 <div className="md:hidden bg-black py-2 px-4 mt-2">
                     <div className="flex flex-col space-y-4">
-                        <Link href="/start">
-                            <a className="text-white hover:text-red-600 transition duration-300 uppercase font-bold">Start</a>
-                        </Link>
-                        <Link href="/performance">
-                            <a className="text-white hover:text-red-600 transition duration-300 uppercase font-bold">Performance</a>
-                        </Link>
-                        <Link href="/training">
-                            <a className="text-white hover:text-red-600 transition duration-300 uppercase font-bold">Training</a>
-                        </Link>
-                        <Link href="/coaching">
-                            <a className="text-white hover:text-red-600 transition duration-300 uppercase font-bold">Coaching</a>
-                        </Link>
-                        <Link href="/shopping">
-                            <a className="text-white hover:text-red-600 transition duration-300 uppercase font-bold">Shopping</a>
-                        </Link>
-                        <Link href="/science">
-                            <a className="text-white hover:text-red-600 transition duration-300 uppercase font-bold">Science</a>
-                        </Link>
-                        <Link href="/registration">
-                            <a className="bg-red-600 text-white px-4 py-2 rounded text-center uppercase font-bold hover:bg-red-700 transition duration-300">
-                                Registration
-                            </a>
-                        </Link>
+                        <a href="#"
+                            className="text-white hover:text-red-600 transition duration-300 uppercase font-bold"
+                            onClick={() => setIsMenuOpen(false)}>
+                            Home
+                        </a>
+                        <a href="#training-programs"
+                            className="text-white hover:text-red-600 transition duration-300 uppercase font-bold"
+                            onClick={() => setIsMenuOpen(false)}>
+                            Programs
+                        </a>
+                        <a href="#private-coaching"
+                            className="text-white hover:text-red-600 transition duration-300 uppercase font-bold"
+                            onClick={() => setIsMenuOpen(false)}>
+                            Coaching
+                        </a>
+                        <a href="#private-coaching"
+                            className="bg-red-600 text-white px-4 py-2 rounded text-center uppercase font-bold hover:bg-red-700 transition duration-300"
+                            onClick={() => setIsMenuOpen(false)}>
+                            Book Now
+                        </a>
                     </div>
                 </div>
             )}
