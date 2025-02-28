@@ -18,7 +18,8 @@ module.exports = {
                 sans: ['Inter', 'sans-serif'],
             },
             backgroundImage: {
-                'hero-pattern': "url('/images/apex-legends-bg.jpg')",
+                'hero-pattern': "url('/images/apex-legends-bg.webp')",
+                'radial-gradient': 'radial-gradient(circle at center, transparent 0%, rgba(16, 16, 16, 0.4) 70%, rgba(16, 16, 16, 0.8) 100%)',
             }
         },
     },
